@@ -1,0 +1,143 @@
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    
+	<!-- include libraries(jQuery, bootstrap) -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+
+    <!-- include summernote css/js-->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
+
+  </head>
+  <body class="container">
+<div class="row">
+  <div class="col-md-12">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">R&F Variedades</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="alterarconta.html">Ana Ruthy</a></li>
+        <li><a href="index.html">Sair</a></li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+</div>
+
+<br><br><br>
+
+<div class="row">
+    <div class="col-md-12">
+      <ul class="nav nav-pills">
+         <li role="presentation">
+            <a href="usuario.html">Gerenciar Postagens</a>
+          </li>
+            <li role="presentation" class="active">
+            <a href="novopost.html">Nova Postagem</a>
+          </li>
+          
+       </ul>
+    </div>
+</div>
+
+<br><br><br><br><br><br>
+
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+     <div class="panel panel-default">
+       <div class="panel-body">
+        <legend>NOVA POSTAGEM</legend>
+        <form>
+          <div class="row">
+             <div class="col-md-6">
+	      <input type="text" placeholder="TITULO" class="form-control">         
+             </div>
+             <div class="col-md-4">
+              <select class="form-control">
+                <option selected>CATEGORIA</option>
+                <option>Divulgação</option>
+                <option>Dicas</option>
+                <option>Promoção</option>
+             </select>
+            </div>
+             <div class="col-md-2">
+                <select class="form-control">
+                <option selected>STATUS</option>
+                <option>Publicado</option>
+                <option>Rascunho</option>
+               </select>
+            </div>
+          </div>
+            <div class="row">
+               <div class="col-md-8">
+                 <br>
+                  <label>Seleciona imagem</label>
+                  <input type="file">
+              </div>
+           </div>
+            <br>
+            <script>
+                $(document).ready(function(){
+                  $('#summernote').summernote(); 
+               });
+           </script>
+            <div id="summernote">
+               <br>Escreva aqui<br>
+           	</div>
+           <button class="btn btn-success btn btn-block">PUBLICAR</button> 
+        </form>
+       </div>
+    </div>
+  </div>
+</div>
+
+<br><br><br><br><br><br>
+
+<div class="row rowRodape">
+  <div class="col-md-4">
+  <h2>R&F Variedades</h2>
+
+</div>
+<div class="col-md-4 text-center">
+R&F Variedades | 2017
+</div>
+<div class="col-md-4 text-right">
+    SIGA-NOS NAS REDES<BR>
+    <a class="btn btn-default btn-sm" href="https://fb.com" target="_blank"> <i class="fa fa-facebook"></i> </a>
+
+    <a class="btn btn-default btn-sm" href="https://instagram.com" target="_blank"> <i class="fa fa-instagram"></i> </a>
+
+   <a class="btn btn-default btn-sm" href="https://snapchat.com" target="_blank"> <i class="fa fa-snapchat"></i> </a>
+
+    </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+
+
+</body>
+</html>
